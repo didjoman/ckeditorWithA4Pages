@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CKEditor</title>
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+        <!-- <script src="http://cdn.ckeditor.com/4.5.8/full-all/ckeditor.js"></script> -->
+        <script src="ckeditor/ckeditor.js"></script>
+        <script src="script.js"></script>
+        <link src="http://cdn.ckeditor.com/4.4.3/full-all/skins/kama/editor.css"></link>
+        <style>
+        #cke_editor{
+            margin: auto;
+        }
+        </style>
+    </head>
+    <body>
+        <textarea name="editor"></textarea>
+        <script>
+            CKEDITOR.replace( 'editor', {
+                customConfig: '/home/alexandre/documents/web/ckeditor/plunk/config.js',
+            });
+        </script>
+    </body>
+</html>

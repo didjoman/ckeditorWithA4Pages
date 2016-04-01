@@ -1,0 +1,30 @@
+/* Styles go here */
+
+body {
+  background: rgb(204,204,204); 
+}
+
+.page {
+  background: white;
+  width: 21cm;
+  height: 29.69cm;
+  display: block;
+  padding: 20mm 15mm;
+  margin: 0.5cm auto;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+@media print {
+  body, .page{
+    margin: 0;
+    box-shadow: 0;
+    page-break-after: ;
+  }
+}
+
+@page {
+    size: A4;
+    margin: 0;
+    padding: 20mm 15mm;
+}
+
