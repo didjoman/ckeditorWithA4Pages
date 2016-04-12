@@ -7,7 +7,7 @@ body {
 .page {
   background: white;
   width: 21cm;
-  height: 29.69cm;
+  min-height: 29.69cm;
   display: block;
   padding: 20mm 15mm;
   margin: 0.5cm auto;
@@ -17,14 +17,18 @@ body {
 @media print {
   body, .page{
     margin: 0;
+    padding: 0px;
     box-shadow: 0;
-    page-break-after: ;
+  }
+
+  .cke_pagebreak{
+    visibility: hidden;
   }
 }
 
 @page {
     size: A4;
-    margin: 0;
-    padding: 20mm 15mm;
+    padding: 0px;
+    margin: 20mm 15mm;
 }
 

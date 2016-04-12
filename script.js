@@ -19,7 +19,7 @@ $( document ).ready(function() {
                     console.log("Key = " + e.data.keyCode);
                     switch (e.data.keyCode) {
                     case 8: { // [ <--| ]
-                        if (range.startOffset == 0) {
+                        if (range.startOffset === 0) {
                             var ancestor = currentNode.$.parentNode;
 							    if (ancestor.tagName === 'BODY' && currentNode.$.previousSibling === null) {
 								console.log("Nothing to remove");

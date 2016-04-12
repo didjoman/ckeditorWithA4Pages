@@ -19,10 +19,13 @@ CKEDITOR.editorConfig = function( config ) {
 	
 	config.removePlugins = 'magicline';
 
-	config.removeButtons = 'Source,NewPage,Templates,ShowBlocks,About,Image,Flash,Table,HorizontalRule,Smiley,SpecialChar,Iframe,PageBreak,Unlink,Anchor,Language,BidiRtl,BidiLtr,CreateDiv,Blockquote,RemoveFormat,Form,Checkbox,Radio,TextField,Select,Textarea,Button,ImageButton,HiddenField,SelectAll';
+	config.removeButtons = 'Source,NewPage,Templates,ShowBlocks,About,Image,Flash,Table,HorizontalRule,Smiley,SpecialChar,Iframe,Unlink,Anchor,Language,BidiRtl,BidiLtr,CreateDiv,Blockquote,RemoveFormat,Form,Checkbox,Radio,TextField,Select,Textarea,Button,ImageButton,HiddenField,SelectAll';
 	config.allowedContent = true;
 	config.contentsCss = './style.css';
 	config.width = '90%';
 	config.height = '30em'; 
+
+	config.enterMode = CKEDITOR.ENTER_BR; // BR, DIV, P
+	config.shiftEnterMode = CKEDITOR.ENTER_BR;
 
 };
